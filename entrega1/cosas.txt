@@ -1,0 +1,7 @@
+mirar grid
+mirar tutorial grid
+mirar flex
+mirar :root
+mirar propiedades basicas como display, margin, padin, border, color
+mirar px vs rem vs em
+
