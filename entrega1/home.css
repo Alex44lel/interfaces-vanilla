@@ -1,0 +1,342 @@
+/*-----------------*/
+/*MOBILE*/
+/*-----------------*/
+
+/*base*/
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --red-noel: #C41E3A;
+    --green-noel: #146B3A;
+    --snow-white: #F0F0F0;
+    --blue-noel: #1C2833;
+    --gold: #FFD700;
+    --pink-noel: #FADADD;
+    --primary-text: #333333;
+    --secondary-text: #666666;
+    font-size: 16px;
+  }
+
+
+body {
+    font-family: 'Mountains of Christmas';
+    line-height: 1.6;
+    font-size: 1rem;
+    background-color: var(--snow-white);
+    color: var(--primary-text);
+}
+
+nav {
+    display: none;
+
+}
+
+h1{
+    color: var(--red-noel);
+    font-size: 2.5rem;
+}
+
+h2{
+    color: var(--red-noel);;
+    font-size: 1.8rem;
+
+}
+
+h3{
+    color: var(--red-noel);;
+    font-size: 1.6rem;
+
+}
+
+h5{
+    color: var(--red-noel);;
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    color: var(--snow-white);
+    border: none;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    background-color: var(--green-noel);
+    cursor: pointer;
+    font-family: 'Mountains of Christmas'; 
+
+
+  }
+  
+  button:hover {
+    background-color: var(--red-noel);
+  }
+
+/*header*/
+
+
+/*home*/
+#home{
+    justify-items: center;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+}
+
+.home-title{
+    margin-bottom: 0rem;
+    grid-column: 1 / -1;
+}
+
+.home-subtitle{
+    grid-column: 1 / -1;
+}
+
+.home-button{
+    font-weight:600;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-column: 1 / -1;
+
+}
+
+/*pnoel*/
+
+.pnoel-title{
+    margin-bottom: 0;
+    grid-column: 1 / -1;
+}
+
+.pnoel-img{
+    margin-top: 1rem;
+    width: 100%;
+    grid-column: 1 / -1;
+
+}
+
+.pnoel-description{
+    grid-column: 1 / -1;
+    margin-top: 0.4rem;
+
+}
+
+.pnoel-subtitle{
+    margin-bottom: 0;
+}
+
+.pnoel-div-description{
+    grid-column: 1/-1
+}
+/*cartas*/
+.cartas-title{
+    margin-bottom: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.cartas-container{
+    display: flex;
+    flex-direction: column;
+}
+.carta{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: var(--green-noel);
+    padding: 1rem 1.3rem;
+    border-radius: 7px;
+    border-style:double;
+    border-width:3px;
+    border-color:  var(--green-noel);
+    background-color: gainsboro;
+    margin-top: 1rem;
+}
+
+.carta-title{
+    grid-column: 1/5;
+    margin-bottom: 0.4rem;
+    margin-top: 0;
+    font-size: 1.15rem;
+}
+
+.carta-img{
+    grid-column: 1/2;
+    border-radius: 20%;
+    width: 100%;
+    margin-top:0.2rem;
+}
+
+.carta-div{
+    grid-column: 2/5;
+    margin-bottom: 0;
+    margin-left: 0.6rem;
+}
+
+.carta-div p{
+    font-size: 0.85rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-weight: 900;
+}
+
+/*enviar*/
+/*jugar*/
+/*footer*/
+
+
+
+
+/*-----------------*/
+/*TABLET*/
+/*-----------------*/
+@media screen and (min-width: 600px) {
+    :root {
+        font-size: 18px;
+    }
+
+
+    section{
+        grid-template-columns: repeat(8,1fr);
+
+       
+    }
+
+
+    /*home*/
+    nav {
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 1rem;
+        font-weight: 800;
+        
+    }
+
+    .logo{
+        max-width:4rem;
+    }
+    
+
+    .nav-links{
+        display: flex;
+        flex-grow: 2;
+        padding-left: 1.5rem;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+    
+    .nav-links a{
+        text-decoration: none;
+        color: var(--blue-noel);
+    }
+    .nav-links a:hover{
+        color: var(--red-noel);
+    }
+    #home{
+        padding-bottom: 11rem;
+
+    }
+
+    .home-title{
+        margin-bottom: 0rem;
+        grid-column: 1 / -1;
+    }
+
+    .home-subtitle{
+        grid-column: 1 / -1;
+    }
+
+    .home-button{
+        font-weight:600;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        grid-column: 1 / -1;
+
+    }
+
+    /*cartas*/
+
+    .cartas-title{
+        grid-column: 1 / -1;
+        
+    }
+
+    .carta{
+        max-width: 45%;
+        
+    }
+    
+    .cartas-container{
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+}
+
+/*-----------------*/
+/*PC*/
+/*-----------------*/
+
+@media screen and (min-width: 768px){
+    :root {
+        font-size: 20px;
+      }
+    #home{
+        padding-top: 4.6rem;
+        padding-bottom: 4.6rem;
+
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+
+    }
+    
+    #pnoel{
+        gap:2rem;
+        padding-bottom: 4.6rem;
+        padding-top: 4.6rem;
+    }
+
+    .pnoel-img{
+        margin-top: 1rem;
+        width: 100%;
+        grid-column: 1 / 7;
+    
+    }
+    
+   
+    .pnoel-div-description{
+        grid-column: 7/13
+    }
+
+
+    #cartas{
+        padding-top: 4.6rem;
+
+        padding-bottom: 4.6rem;
+    
+    }
+
+    .carta{
+        max-width: 30%;
+        
+    }
+}
