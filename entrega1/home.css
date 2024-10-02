@@ -53,6 +53,10 @@ h3{
 
 }
 
+h4{
+    color: var(--green-noel)
+}
+
 h5{
     color: var(--red-noel);;
     font-size: 1.4rem;
@@ -141,6 +145,9 @@ button {
     grid-column: 1/-1
 }
 /*cartas*/
+
+
+
 .cartas-title{
     margin-bottom: 0.2rem;
     margin-top: 0.5rem;
@@ -190,11 +197,94 @@ button {
 }
 
 /*enviar*/
+
+.enviar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.caja-texto{
+    background-color: gainsboro;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-width: 7px;
+    border-style: double;
+    border-color: var(--green-noel);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.text-carta{
+    height: 100px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.caja-carta{
+    background-color: gainsboro;
+    padding: 1rem;
+    border-width: 7px;
+    border-style: double;
+    border-color: var(--green-noel);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
 /*jugar*/
+
+.juega-container{
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.juegos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.juegos-juego{
+    justify-content: center;
+    margin: 5%;
+}
+
 /*footer*/
 
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+}
 
+.redes-footer{
+    width: 50%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.enlaces-footer{
+    width: 50%;
+}
+
+.img-footer{
+    width: 4%;
+    height: auto;
+    margin-left: 2%;
+}
+
+.img-x{
+    width: 4%;
+    margin-left: 2%;
+}
+
+.enlaces-footer{
+    font-size: smaller;
+}
 
 /*-----------------*/
 /*TABLET*/
@@ -290,7 +380,131 @@ button {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    /*enviar*/
+    .enviar-title{
+        grid-column: 1 / -1;
+
+    }
+
+    .caja-title{
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        font-size: larger;
+    }
+
+    .caja-texto{
+        background-color: gainsboro;
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border-width: 7px;
+        border-style: double;
+        border-color: var(--green-noel);
+        border-radius: 5px;
+        width: 25%;
+    }
+
+    .caja-carta{
+        background-color: gainsboro;
+        padding: 1rem;
+        border-width: 7px;
+        border-style: double;
+        border-color: var(--green-noel);
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        width: 100%;
+
+    }
+
+    .text{
+        border-radius: 5px;
+        height: 50px;
+        text-align: top;
+        width: 100%;
+    }
+
+    .text-carta{
+        border-radius: 5px;
+        height: 100px;
+        width: 100%;
+    }
+
+    .enviar-container{
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+
+    }
+
+    .boton-enviar{
+        width: 30%;
+        margin-top: 0.5rem;
+        }
+
+    /*Juega*/
+    .juega-title{
+        grid-column: 1 / -1;
+    }
+
+    .juega-container{
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .juegos{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+
+    .juegos-boton{
+        margin: 0.5;
+    }
     
+    .juegos-juego{
+        width: 70%;
+    }
+
+    .juego-img{
+        width: 100%;
+        height: 100%;
+        margin-bottom:5% ;
+        margin-left: 5%;
+    }
+
+    /*footer*/
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        background-color: azure;
+    }
+
+    .redes-footer{
+        width: 50%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .enlaces-footer{
+        width: 50%;
+    }
+
+    .img-footer{
+        width: 4%;
+        margin-left: 2%;
+    }
+
+    .img-x{
+        width: 4%;
+        margin-left: 2%;
+    }
 }
 
 /*-----------------*/
@@ -343,4 +557,5 @@ button {
         max-width: 30%;
         
     }
+
 }
