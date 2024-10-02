@@ -221,6 +221,10 @@ button {
         padding-right: 1.5rem;
         padding-top: 1rem;
         font-weight: 800;
+        /* border-radius: 7px;
+        border-style:double;
+        border-width:3px;
+        border-color:  var(--green-noel); */
         
     }
 
@@ -234,12 +238,13 @@ button {
         flex-grow: 2;
         padding-left: 1.5rem;
         list-style-type: none;
-        justify-content: space-around;
     }
     
     .nav-links a{
         text-decoration: none;
         color: var(--blue-noel);
+        margin-left: 2.3rem;
+
     }
     .nav-links a:hover{
         color: var(--red-noel);
