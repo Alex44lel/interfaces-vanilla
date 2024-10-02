@@ -330,8 +330,8 @@ button {
 
     /*home*/
     nav {
-        display:flex;
-        justify-content: flex-start;
+        display:grid;
+        grid-template-columns: repeat(12,1fr);
         align-items: center;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -346,20 +346,33 @@ button {
 
     .logo{
         max-width:4rem;
+        margin-right: 1.8rem;
+        grid-column: 1/2;
     }
     
 
     .nav-links{
+        grid-column: 2/10;
+        justify-self:start;
         display: flex;
-        flex-grow: 2;
-        padding-left: 1.5rem;
+        flex-grow: 1;
         list-style-type: none;
+        padding-left: 0;
+
     }
     
+    .sign-log{
+        grid-column: 10/13;
+        justify-content:center;
+        display: flex;
+        flex-wrap: wrap;
+        gap:5px
+
+    }
     .nav-links a{
         text-decoration: none;
         color: var(--blue-noel);
-        margin-left: 2.3rem;
+        margin-right: 25px;
 
     }
     .nav-links a:hover{
@@ -504,6 +517,8 @@ button {
         grid-template-columns: repeat(6,1fr);
         justify-items: start;
         text-align: left;
+        margin-top: 35px;
+
     }
     .footer-first-div{
         margin-left: 3rem;
@@ -512,6 +527,9 @@ button {
 
     .enlaces-footer{
         grid-column: 3/7;
+    }
+    .enlaces-footer h4{
+        margin-top:0
     }
     .logo-footer{
        
