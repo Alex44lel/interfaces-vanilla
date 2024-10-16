@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style/home.css" />
+    <link rel="icon" href="./images/logo1.png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papá Noel🎅</title>
+    <!-- defer se asegura de que todo el contenido html este cargado antes de cargar jquery -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./images/logo.png" class="logo" />
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#pnoel">Papá Noel</a>
+          <a href="#cartas">Las Cartas</a>
+          <a href="#enviar">Envía tu carta</a>
+          <a href="#jugar">¡Juega!</a>
+        </div>
+        <div class="sign-log">
+          <button>Sign in</button>
+          <button>Sign up</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <h1 class="home-title">Sigue a Papá Noel</h1>
+        <h2 class="home-contador"></h2>
+        <button class="home-button">Empezar</button>
+      </section>
+      <section id="pnoel">
+        <h3 class="pnoel-title">Papá Noel</h3>
+        <img class="pnoel-img" src="./images/santa.jpg" />
+        <div class="pnoel-div-description">
+          <h4 class="pnoel-subtitle">Quien es Papá Noel?</h4>
+          <p class="pnoel-description">
+            Papá Noel, también llamado Santa Claus, es un hombre muy bueno y
+            mágico que vive en el Polo Norte. Cada año, en la noche de Navidad,
+            viaja en su trineo tirado por renos para llevar regalos a los niños
+            de todo el mundo que se han portado bien. Va de casa en casa,
+            entrando por la chimenea y dejando los regalos debajo del árbol de
+            Navidad o en los calcetines. Le gusta mucho recibir galletas y leche
+            que los niños dejan para él como agradecimiento.
+          </p>
+        </div>
+      </section>
+      <section id="cartas">
+        <h3 class="cartas-title">Las cartas</h3>
+        <div class="cartas-container">
+          <div class="carta">
+            <h4 class="carta-title">Carta 1</h4>
+            <img class="carta-img" src="./images/cañada.png" />
+            <div class="carta-div">
+              <p>Alejandro Cañada</p>
+              <p>La Coruña</p>
+              <p>España</p>
+            </div>
+          </div>
+          <div class="carta">
+            <h4 class="carta-title">Carta 2</h4>
+            <img class="carta-img" src="./images/Ausina.png" />
+            <div class="carta-div">
+              <p>Alejandro Ausina</p>
+              <p>Madrid</p>
+              <p>España</p>
+            </div>
+          </div>
+          <div class="carta">
+            <h4 class="carta-title">Carta 3</h4>
+            <img class="carta-img" src="./images/lourdes.png" />
+            <div class="carta-div">
+              <p>Lourdes Morales</p>
+              <p>Valencia</p>
+              <p>España</p>
+            </div>
+          </div>
+          <div class="carta">
+            <h4 class="carta-title">Carta 4</h4>
+            <img class="carta-img" src="./images/nicolas.png" />
+            <div class="carta-div">
+              <p>Nicolás de Quevedo</p>
+              <p>Buenos Aires</p>
+              <p>Argentina</p>
+            </div>
+          </div>
+          <div class="carta">
+            <h4 class="carta-title">Carta 5</h4>
+            <img class="carta-img" src="./images/Anthony.png" />
+            <div class="carta-div">
+              <p>Anthony O'Neil</p>
+              <p>Dublin</p>
+              <p>Irlanda</p>
+            </div>
+          </div>
+          <div class="carta">
+            <h4 class="carta-title">Carta 6</h4>
+            <img class="carta-img" src="./images/govind.png" />
+            <div class="carta-div">
+              <p>Govind Nair</p>
+              <p>Delhi</p>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="enviar">
+        <h3 class="enviar-title">Envía tu carta</h3>
+        <div class="enviar-container">
+          <div class="caja-texto">
+            <h4 class="caja-title">Nombre</h4>
+            <input type="text" class="text" />
+          </div>
+          <div class="caja-texto">
+            <h4 class="caja-title">Correo</h4>
+            <input type="text" class="text" />
+          </div>
+          <div class="caja-texto">
+            <h4 class="caja-title">Ciudad</h4>
+            <input type="text" class="text" />
+          </div>
+          <div class="caja-texto">
+            <h4 class="caja-title">País</h4>
+            <input type="text" class="text" />
+          </div>
+        </div>
+        <div class="enviar-container">
+          <div class="caja-carta">
+            <h4 class="caja-title">Carta para Papá Noel</h4>
+            <textarea rows="7" type="text" class="text"></textarea>
+          </div>
+          <button class="boton-enviar">Envía</button>
+        </div>
+      </section>
+      <section id="jugar">
+        <h3 class="juega-title">¡Juega!</h3>
+        <div class="juega-container">
+          <div class="juegos">
+            <div>
+              <button class="juegos-boton">Juego 1</button>
+              <button class="juegos-boton">Juego 2</button>
+              <button class="juegos-boton">Juego 3</button>
+            </div>
+          </div>
+          <div class="juegos-juego">
+            <img class="juego-img" src="./images/santas-platformer.png" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr class="break-footer" />
+    <footer class="footer">
+      <div class="footer-first-div">
+        <div class="footer-logo-div">
+          <img class="logo-footer" src="./images/logo1.png" />
+        </div>
+        <div class="redes-footer">
+          <img class="img-footer" src="./images/linkedin.png" />
+          <img class="img-footer" src="./images/instagram.png" />
+          <img class="img-footer" src="./images/X-Logo.png" />
+          <img class="img-footer" src="./images/gmail.png" />
+        </div>
+      </div>
+      <div class="enlaces-footer">
+        <h4>Enlaces útiles</h4>
+        <div class="enlaces">
+          <a>Enlace 1</a>
+          <a>Enlace 2</a>
+          <a>Enlace 3</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
