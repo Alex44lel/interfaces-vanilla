@@ -29,11 +29,12 @@ body {
     font-size: 1rem;
     background-color: var(--snow-white);
     color: var(--primary-text);
+    margin:0;
 }
 
-nav {
-    display: none;
 
+#laptop-nav{
+    display: none ;
 }
 
 h1{
@@ -90,7 +91,116 @@ button {
     background-color: var(--red-noel);
   }
 
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, select {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1rem;
+  }
+
 /*header*/
+
+.user-icon{
+    position: absolute;
+    right: 8px;
+    top: 20px;
+}
+
+.user-icon img{
+    width: 75%;
+}
+.hamburger,.close-hamburguer{
+    background:none;
+    position:fixed;
+    top:20px;
+    left:20px;
+    line-height:45px;
+    padding:0rem 0.7rem;
+    color:white;
+    background-color: var(--blue-noel);
+    border:solid;
+    font-size:1.4em;
+    font-weight:bold;
+    cursor:pointer;
+    z-index:10;
+  }
+
+  .close-hamburguer{
+    padding: 0rem 1rem;
+  }
+
+.menu-hamburguer{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    border-bottom: solid 4px var(--blue-noel);
+
+}
+.menu-hamburguer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-hamburguer ul li {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid var(--blue-noel);
+}
+
+.menu-hamburguer ul li a {
+    text-decoration: none;
+    color: var(--blue-noel);
+    display: block;
+    font-weight: bold;
+}
+
+/*Dropdown*/
+/*user dropdown*/
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10px; 
+    background-color: var(--snow-white);
+    border: 1px solid var(--blue-noel);
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    padding: 10px;
+    width: 150px;
+}
+
+.user-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-dropdown ul li {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--blue-noel);
+    font-weight: bold;
+
+}
+
+.user-dropdown ul li:last-child {
+    border-bottom: none;
+}
+
+.user-dropdown ul li:hover {
+    background-color: var(--green-noel);
+    color: var(--snow-white);
+}
 
 
 /*home*/
@@ -320,15 +430,200 @@ button {
     font-weight: 600;
 }
 
+/*MODAL AND POP-UP*/
+/* Modal */
+.modal,.custom-popup {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 1.3rem;
+    border-radius: 2em;
+    border: 2px solid var(--snow-white);
+    width: 80%;
+    height: 70%;
+    max-width: 700px;
+    overflow-y: auto;
+    margin: 5rem auto;
+
+  }
+
+  .custom-popup-content {
+    position: relative;
+    background-color: var(--snow-white);
+    margin: 2rem auto;
+    padding: 1.2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+  }
+
+  .popup-buttons {
+    margin-top: 0.6rem;
+  }
+
+  .popup-button {
+    padding: 0.3rem 0.6rem;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--green-noel);
+    color: var(--snow-white);
+    cursor: pointer;
+  }
+
+  #popup-cancel-button {
+    background-color: var(--red-noel);
+  }
+  
+  .popup-button:hover {
+    background-color: var(--blue-noel) !important;
+  }
+  
+  #custom-popup-title{
+    margin: 0;
+    font-size: 1rem;
+  }
+  #custom-popup-message {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    color: var(--primary-text);
+    text-align: left;
+  }
+  
+  .popup-button:hover {
+    background-color: var(--red-noel);
+  }
+  
+  .close {
+    color: var(--blue-noel);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #children-info {
+    padding-left: 2rem;
+  }
+  #children-info h4{
+     margin-top: 0;
+     margin-bottom: 0;
+     color: var(--primary-text);
+  }
+  #children-info label{
+    display: block;
+  }
+  #children-info input{
+    display: block;
+    width: 100%;
+  }
+  .close:hover{
+    transform: scale(1.2);
+  }
+  
+  .modal-buttons {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  
+  
+  .sign-log{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 1rem;
+  }
+  .sign-log button{
+    display: block;
+    margin-top: 0.3rem;
+    
+    width: 50%;
+  }
+
+  /* display cartas ---------------------*/
+
+/* Card Styles */
+#cartas-list {
+    display: flex;
+    gap: 0.5rem;
+    max-height: 400px;
+    overflow-y: auto; 
+    padding: 0.5rem;
+    border: 2px solid var(--blue-noel);
+    border-radius: 8px;
+}
+
+.carta-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0.5rem;
+    border: 2px solid var(--green-noel);
+    border-radius: 8px;
+    cursor: move; 
+}
+
+.carta-container:hover {
+    background-color: var(--snow-white);
+}
+
+.carta-title-user {
+    grid-column: 1 / 4;
+    color: var(--green-noel);
+    font-size: 1.2rem;
+    margin: 0 0 0.2rem;
+    font-weight: bold;
+}
+
+.carta-container p {
+    margin: 0;
+    grid-column: 1 / 4;
+    color: var(--primary-text);
+    font-size: 0.75rem;
+}
+
+.carta-container button.delete-carta-button {
+    grid-column: 3 / 4;
+    justify-self: end;
+    background-color: var(--red-noel);
+    color: var(--snow-white);
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 0.7rem;
+    margin-top:0.5rem;
+    cursor: pointer;
+}
+
+
+
 /*-----------------*/
 /*TABLET*/
 /*-----------------*/
 @media screen and (min-width: 600px) {
+    .laptop-tablet-nav{display: block;}
     :root {
         font-size: 18px;
     }
 
-
+    #phone-nav{
+        display: none ;
+    }
+    
+   #laptop-nav{
+    display: grid;
+   }
     section{
         grid-template-columns: repeat(8,1fr);
 
@@ -364,12 +659,32 @@ button {
         padding-left: 0;
     }
 
-    .sign-log{
+
+  
+      .sign-log button{
+        margin-top: 0rem;
+        
+        width: 60%;
+      }
+
+    .sign-log,.user-icon{
         grid-column: 10/13;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
+        padding: 0;
+        position: static;
+    }
+
+    .user-icon img{
+        max-width: 2.5rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+
+    .user-icon img:hover{
+        transform: scale(1.2);
     }
     
     .nav-links a{
@@ -382,6 +697,9 @@ button {
         color: var(--red-noel);
     }
 
+    /* Hamburguer menu */
+    
+    /* home */
     #home{
         padding-bottom: 11rem;
     }
@@ -402,6 +720,8 @@ button {
         grid-column: 1 / -1;
 
     }
+
+    
 
     /*cartas*/
 
@@ -442,10 +762,13 @@ button {
     }
 
     .text{
-        padding: 0.6rem 1rem;
+        padding: 0.3rem 0.5rem;
         width: 100%;
     }
 
+    #form-carta{
+        grid-column: 1 / -1;
+    }
     .enviar-container{
         grid-column: 1 / -1;
         display: flex;
@@ -456,7 +779,7 @@ button {
 
     .boton-enviar{
         width: 30%;
-        margin-top: 0.5rem;
+        margin: 0.5rem auto;
     }
 
     /*Juega*/
@@ -559,6 +882,11 @@ button {
         grid-template-columns: repeat(12,1fr);
 
     }
+
+    .sign-log button{
+        
+        width: 40%;
+      }
     
     #pnoel{
         gap:2rem;
